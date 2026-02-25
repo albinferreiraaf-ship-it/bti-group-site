@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bti-group-inc.com/</loc></url>
-  <url><loc>https://bti-group-inc.com/services.html</loc></url>
-  <url><loc>https://bti-group-inc.com/realisations.html</loc></url>
-  <url><loc>https://bti-group-inc.com/cvc.html</loc></url>
-  <url><loc>https://bti-group-inc.com/electricite.html</loc></url>
-  <url><loc>https://bti-group-inc.com/tuyauterie.html</loc></url>
-  <url><loc>https://bti-group-inc.com/blog.html</loc></url>
-  <url><loc>https://bti-group-inc.com/certifications.html</loc></url>
-  <url><loc>https://bti-group-inc.com/appel-offres.html</loc></url>
 
-  <url><loc>https://bti-group-inc.com/lyon.html</loc></url>
-  <url><loc>https://bti-group-inc.com/grenoble.html</loc></url>
-  <url><loc>https://bti-group-inc.com/saint-etienne.html</loc></url>
+  <url>
+    <loc>https://www.bti-group-inc.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/services.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/realisations.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/cvc.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/electricite.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/tuyauterie.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/blog.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/certifications.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/appel-offres.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/lyon.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/grenoble.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.bti-group-inc.com/saint-etienne.html</loc>
+  </url>
 
 </urlset>
