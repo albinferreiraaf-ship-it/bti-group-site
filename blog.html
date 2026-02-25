@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BTI GROUP — Actualités & Expertise Technique</title>
+<meta name="description" content="Actualités techniques CVC, électricité, tuyauterie industrielle en Auvergne-Rhône-Alpes.">
+<style>
+
+/* ===== V37 – SOCIÉTÉ TECHNIQUE RÉGIONALE (CLEAN REBUILD) ===== */
+:root{
+  --navy:#0A1D40;
+  --navy2:#12325f;
+  --electric:#2563eb;
+  --ink:#0b1220;
+  --muted:#4b5563;
+  --line:#e5e7eb;
+  --bg:#f5f7fa;
+  --card:#ffffff;
+  --radius:14px;
+  --shadow:0 10px 28px rgba(10,29,64,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.7;
+}
+a{color:var(--electric);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1160px;margin:0 auto;padding:0 22px}
+
+/* Header */
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;min-width:240px}
+.brand img{height:46px;width:auto;display:block}
+.brand .t1{font-weight:900;letter-spacing:.5px;color:var(--navy)}
+.brand .t2{font-size:12.5px;color:var(--muted);font-weight:700}
+.menu{display:flex;gap:8px;align-items:center;font-weight:800;color:var(--navy2);flex-wrap:wrap}
+.menu a{padding:10px 10px;border-radius:10px}
+.menu a:hover{background:rgba(10,29,64,.05);text-decoration:none}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 16px;border-radius:12px;border:1px solid var(--line);
+  background:#fff;font-weight:800;letter-spacing:.2px;
+  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+  white-space:nowrap;color:var(--navy);
+}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow);text-decoration:none}
+.btn.primary{background:var(--electric);border-color:var(--electric);color:#fff}
+.btn.primary:hover{background:#1d4ed8}
+
+/* Sections */
+section{padding:56px 0}
+.section-title{font-size:20px;margin:0 0 10px;color:var(--navy);letter-spacing:.12em;text-transform:uppercase;font-weight:900}
+.section-title:after{content:"";display:block;width:64px;height:3px;background:var(--electric);border-radius:999px;margin-top:10px}
+.section-sub{margin:0 0 18px;color:var(--muted);line-height:1.8}
+
+/* Layout */
+.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+
+/* Cards */
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:0 6px 18px rgba(10,29,64,.08);
+}
+.k{font-weight:1000;color:var(--navy)}
+.help{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* Hero (clear, technical) */
+.hero-full{
+  position:relative;
+  padding:84px 0 58px;
+  background:linear-gradient(135deg, rgba(10,29,64,.96), rgba(18,50,95,.92));
+  color:#fff;
+}
+.hero-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start}
+.hero-title{font-size:44px;line-height:1.05;margin:12px 0 14px;letter-spacing:-.6px;font-weight:900}
+.hero-lead{font-size:16.5px;color:rgba(255,255,255,.90);line-height:1.75;margin:0 0 18px;max-width:70ch}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.06);
+  padding:8px 12px;border-radius:999px;
+  font-weight:900;color:#fff;font-size:13px
+}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.hero-ctas .btn{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.06);color:#fff}
+.hero-ctas .btn:hover{background:rgba(255,255,255,.10)}
+.hero-ctas .btn.primary{background:var(--electric);border-color:var(--electric);color:#fff}
+
+/* Services list (no bubbles, high contrast) */
+.highlight-services{
+  margin-top:18px;
+  background:#fff;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:14px;
+  padding:18px 18px 6px;
+}
+.highlight-services ul{list-style:none;margin:0;padding:0}
+.highlight-services li{
+  display:flex;align-items:center;gap:12px;
+  margin:0 0 12px;
+  color:var(--navy);
+  font-weight:900;
+  letter-spacing:.2px;
+}
+.highlight-services li:before{
+  content:"✓";
+  display:inline-flex;align-items:center;justify-content:center;
+  width:22px;height:22px;border-radius:7px;
+  background:rgba(37,99,235,.12);
+  color:var(--electric);
+  font-weight:1000;
+}
+
+/* Indicators (not dark block; technical) */
+.counter-section{background:#ffffff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.counter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;text-align:left}
+.counter-box{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:18px}
+.counter{font-size:38px;font-weight:1000;color:var(--navy);letter-spacing:-.3px}
+.counter-label{color:var(--muted);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:900}
+
+/* Logos */
+.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;align-items:center}
+.logo-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;height:86px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 22px rgba(10,29,64,.06)}
+.logo-card img{max-height:60px;max-width:100%;width:auto;height:auto;filter:grayscale(100%) contrast(1.05) brightness(.95);opacity:.92}
+
+/* Contact */
+#contact .card{box-shadow:0 10px 28px rgba(10,29,64,.10)}
+input,textarea,select{border:1px solid var(--line);border-radius:12px;padding:12px 12px;font:inherit;outline:none;background:#fff}
+textarea{min-height:110px;resize:vertical}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+
+/* Reveal (subtle) */
+.reveal{opacity:0;transform:translateY(8px);transition:opacity .7s ease, transform .7s ease}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .btn,.reveal{transition:none}
+}
+
+/* Responsive */
+@media (max-width:980px){
+  .menu{display:none}
+  .grid2,.hero-wrap{grid-template-columns:1fr}
+  .hero-title{font-size:34px}
+}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:26px 0 34px;color:var(--muted);font-size:12.5px;line-height:1.7;background:#fff}
+.footgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:16px;align-items:start}
+@media (max-width:980px){.footgrid{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<h1>Actualités & Expertise Technique</h1>
+<ul>
+<li><a href="blog-cvc-performance.html">Optimisation performance CVC industrielle</a></li>
+<li><a href="blog-securite-electrique.html">Sécurité électrique en environnement industriel</a></li>
+</ul>
+<p><a href="index.html">Retour</a></p>
+</body>
+</html>
